@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4795136C2163F5B600FB3DD6 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795136B2163F5B600FB3DD6 /* PlanetModel.swift */; };
+		479513712163F69500FB3DD6 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479513702163F69500FB3DD6 /* PlanetController.swift */; };
+		479513732163FA2900FB3DD6 /* SolarSystemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479513722163FA2900FB3DD6 /* SolarSystemDetailViewController.swift */; };
+		479513752164092900FB3DD6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479513742164092900FB3DD6 /* Extension.swift */; };
 		47E8F2452163F1320053D672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8F2442163F1320053D672 /* AppDelegate.swift */; };
-		47E8F2472163F1320053D672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8F2462163F1320053D672 /* ViewController.swift */; };
 		47E8F24A2163F1320053D672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E8F2482163F1320053D672 /* Main.storyboard */; };
-		47E8F24C2163F1340053D672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E8F24B2163F1340053D672 /* Assets.xcassets */; };
 		47E8F24F2163F1340053D672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E8F24D2163F1340053D672 /* LaunchScreen.storyboard */; };
+		47E8F2572163F1530053D672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E8F2562163F1530053D672 /* Assets.xcassets */; };
+		47E8F25D2163F4050053D672 /* SolarSystemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8F25C2163F4050053D672 /* SolarSystemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47E8F2412163F1320053D672 /* SolarSystem_iOS21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem_iOS21.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4795136B2163F5B600FB3DD6 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		479513702163F69500FB3DD6 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		479513722163FA2900FB3DD6 /* SolarSystemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemDetailViewController.swift; sourceTree = "<group>"; };
+		479513742164092900FB3DD6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = SolarSystem_iOS22/extensionFunc/Extension.swift; sourceTree = SOURCE_ROOT; };
+		47E8F2412163F1320053D672 /* SolarSystem_iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem_iOS22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E8F2442163F1320053D672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47E8F2462163F1320053D672 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47E8F2492163F1320053D672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		47E8F24B2163F1340053D672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E8F24E2163F1340053D672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47E8F2502163F1340053D672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E8F2562163F1530053D672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47E8F25C2163F4050053D672 /* SolarSystemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4795136D2163F5EB00FB3DD6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		47E8F2382163F1320053D672 = {
 			isa = PBXGroup;
 			children = (
-				47E8F2432163F1320053D672 /* SolarSystem_iOS21 */,
+				47E8F2432163F1320053D672 /* SolarSystem_iOS22 */,
 				47E8F2422163F1320053D672 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +61,67 @@
 		47E8F2422163F1320053D672 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47E8F2412163F1320053D672 /* SolarSystem_iOS21.app */,
+				47E8F2412163F1320053D672 /* SolarSystem_iOS22.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47E8F2432163F1320053D672 /* SolarSystem_iOS21 */ = {
+		47E8F2432163F1320053D672 /* SolarSystem_iOS22 */ = {
+			isa = PBXGroup;
+			children = (
+				4795136D2163F5EB00FB3DD6 /* SupportingFiles */,
+				47E8F25A2163F2D50053D672 /* ViewController */,
+				47E8F2592163F2CD0053D672 /* Model */,
+				47E8F25B2163F2EE0053D672 /* Resources */,
+			);
+			path = SolarSystem_iOS22;
+			sourceTree = "<group>";
+		};
+		47E8F2582163F2C60053D672 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47E8F2482163F1320053D672 /* Main.storyboard */,
+				479513742164092900FB3DD6 /* Extension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47E8F2592163F2CD0053D672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4795136B2163F5B600FB3DD6 /* PlanetModel.swift */,
+				479513702163F69500FB3DD6 /* PlanetController.swift */,
+				47E8F2582163F2C60053D672 /* UI */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47E8F25A2163F2D50053D672 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47E8F25C2163F4050053D672 /* SolarSystemTableViewController.swift */,
+				479513722163FA2900FB3DD6 /* SolarSystemDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		47E8F25B2163F2EE0053D672 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				47E8F2442163F1320053D672 /* AppDelegate.swift */,
-				47E8F2462163F1320053D672 /* ViewController.swift */,
-				47E8F2482163F1320053D672 /* Main.storyboard */,
-				47E8F24B2163F1340053D672 /* Assets.xcassets */,
 				47E8F24D2163F1340053D672 /* LaunchScreen.storyboard */,
 				47E8F2502163F1340053D672 /* Info.plist */,
+				47E8F2562163F1530053D672 /* Assets.xcassets */,
 			);
-			path = SolarSystem_iOS21;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47E8F2402163F1320053D672 /* SolarSystem_iOS21 */ = {
+		47E8F2402163F1320053D672 /* SolarSystem_iOS22 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47E8F2532163F1340053D672 /* Build configuration list for PBXNativeTarget "SolarSystem_iOS21" */;
+			buildConfigurationList = 47E8F2532163F1340053D672 /* Build configuration list for PBXNativeTarget "SolarSystem_iOS22" */;
 			buildPhases = (
 				47E8F23D2163F1320053D672 /* Sources */,
 				47E8F23E2163F1320053D672 /* Frameworks */,
@@ -79,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = SolarSystem_iOS21;
+			name = SolarSystem_iOS22;
 			productName = SolarSystem_iOS21;
-			productReference = 47E8F2412163F1320053D672 /* SolarSystem_iOS21.app */;
+			productReference = 47E8F2412163F1320053D672 /* SolarSystem_iOS22.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47E8F23C2163F1320053D672 /* Build configuration list for PBXProject "SolarSystem_iOS21" */;
+			buildConfigurationList = 47E8F23C2163F1320053D672 /* Build configuration list for PBXProject "SolarSystem_iOS22" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47E8F2402163F1320053D672 /* SolarSystem_iOS21 */,
+				47E8F2402163F1320053D672 /* SolarSystem_iOS22 */,
 			);
 		};
 /* End PBXProject section */
@@ -122,8 +174,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E8F2572163F1530053D672 /* Assets.xcassets in Resources */,
 				47E8F24F2163F1340053D672 /* LaunchScreen.storyboard in Resources */,
-				47E8F24C2163F1340053D672 /* Assets.xcassets in Resources */,
 				47E8F24A2163F1320053D672 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E8F2472163F1320053D672 /* ViewController.swift in Sources */,
+				47E8F25D2163F4050053D672 /* SolarSystemTableViewController.swift in Sources */,
+				479513732163FA2900FB3DD6 /* SolarSystemDetailViewController.swift in Sources */,
+				479513712163F69500FB3DD6 /* PlanetController.swift in Sources */,
+				479513752164092900FB3DD6 /* Extension.swift in Sources */,
 				47E8F2452163F1320053D672 /* AppDelegate.swift in Sources */,
+				4795136C2163F5B600FB3DD6 /* PlanetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = SolarSystem_iOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SolarSystem_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = SolarSystem_iOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SolarSystem_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47E8F23C2163F1320053D672 /* Build configuration list for PBXProject "SolarSystem_iOS21" */ = {
+		47E8F23C2163F1320053D672 /* Build configuration list for PBXProject "SolarSystem_iOS22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47E8F2512163F1340053D672 /* Debug */,
@@ -326,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47E8F2532163F1340053D672 /* Build configuration list for PBXNativeTarget "SolarSystem_iOS21" */ = {
+		47E8F2532163F1340053D672 /* Build configuration list for PBXNativeTarget "SolarSystem_iOS22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47E8F2542163F1340053D672 /* Debug */,

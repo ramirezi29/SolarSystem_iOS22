@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sTt-WS-Zva">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Solar System Table View Controller-->
+        <scene sceneID="9uc-Hy-DT6">
+            <objects>
+                <tableViewController id="wym-2M-MUR" customClass="SolarSystemTableViewController" customModule="SolarSystem_iOS22" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yRg-g9-NGY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="62X-XN-No9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" textLabel="oRg-HH-Tqk" rowHeight="36" style="IBUITableViewCellStyleDefault" id="7sg-ED-AZf">
+                                <rect key="frame" x="0.0" y="129" width="375" height="36"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7sg-ED-AZf" id="sQo-31-2wR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="bottomRight" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oRg-HH-Tqk">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="35.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="-2"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="94I-9d-cat" kind="show" identifier="toDetailVC" id="8gA-8D-lpb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wym-2M-MUR" id="Cxh-S7-yuV"/>
+                            <outlet property="delegate" destination="wym-2M-MUR" id="Nh5-d8-Ccr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NRJ-vs-hCi"/>
+                    <connections>
+                        <outlet property="SolarSystemHeaderImage" destination="62X-XN-No9" id="e4d-9j-teB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXm-xr-1bg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="157.87106446776613"/>
+        </scene>
+        <!--Solar System Detail View Controller-->
+        <scene sceneID="eXt-0Z-GO4">
+            <objects>
+                <viewController id="94I-9d-cat" customClass="SolarSystemDetailViewController" customModule="SolarSystem_iOS22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZZ-kW-v7X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="-14" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="2nQ-3W-xlI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qEc-Lb-S9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qEc-Lb-S9z" secondAttribute="height" multiplier="25:16" id="bxK-EP-gbv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Planet)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-xZ-ibS">
+                                        <rect key="frame" x="138.5" y="292" width="98" height="19"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(diameter)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYa-OG-yxl">
+                                        <rect key="frame" x="37.5" y="363" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="987-pd-eWN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(dayLenght)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i54-3z-5rg">
+                                        <rect key="frame" x="37.5" y="436" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="bYU-bT-7MC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(KMSUN)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqX-Ae-W3u">
+                                        <rect key="frame" x="37.5" y="509" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="LEw-io-4Uk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(orderNumber)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-gS-Ima">
+                                        <rect key="frame" x="37.5" y="582" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Pel-YX-teG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RAx-gS-Ima" secondAttribute="bottom" id="8t2-IJ-bNf"/>
+                                    <constraint firstItem="uo0-xZ-ibS" firstAttribute="centerY" secondItem="2nQ-3W-xlI" secondAttribute="centerY" id="ABb-Sa-l5U"/>
+                                    <constraint firstItem="uo0-xZ-ibS" firstAttribute="centerX" secondItem="2nQ-3W-xlI" secondAttribute="centerX" id="NkL-FA-Atr"/>
+                                    <constraint firstItem="qEc-Lb-S9z" firstAttribute="leading" secondItem="2nQ-3W-xlI" secondAttribute="leading" id="j2U-et-kTY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qEc-Lb-S9z" secondAttribute="trailing" id="sd9-ve-hF7"/>
+                                    <constraint firstItem="qEc-Lb-S9z" firstAttribute="top" secondItem="2nQ-3W-xlI" secondAttribute="top" id="ytX-3R-cXr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yYa-OG-yxl" firstAttribute="width" secondItem="sZZ-kW-v7X" secondAttribute="width" multiplier="0.8" id="4dC-ZY-AjJ"/>
+                            <constraint firstItem="0BF-4N-9Wp" firstAttribute="trailing" secondItem="2nQ-3W-xlI" secondAttribute="trailing" id="9kg-rW-1Tr"/>
+                            <constraint firstItem="2nQ-3W-xlI" firstAttribute="centerX" secondItem="sZZ-kW-v7X" secondAttribute="centerX" id="Erj-uC-yRB"/>
+                            <constraint firstItem="RAx-gS-Ima" firstAttribute="width" secondItem="sZZ-kW-v7X" secondAttribute="width" multiplier="0.8" id="GXW-A2-02f"/>
+                            <constraint firstItem="i54-3z-5rg" firstAttribute="width" secondItem="sZZ-kW-v7X" secondAttribute="width" multiplier="0.8" id="Iks-Jw-ESU"/>
+                            <constraint firstItem="2nQ-3W-xlI" firstAttribute="top" secondItem="0BF-4N-9Wp" secondAttribute="top" id="Wdl-rh-YaK"/>
+                            <constraint firstItem="2nQ-3W-xlI" firstAttribute="centerY" secondItem="sZZ-kW-v7X" secondAttribute="centerY" constant="32" id="Y4d-oI-qwK"/>
+                            <constraint firstItem="KqX-Ae-W3u" firstAttribute="width" secondItem="sZZ-kW-v7X" secondAttribute="width" multiplier="0.8" id="kGa-bU-Dlv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0BF-4N-9Wp"/>
+                    </view>
+                    <connections>
+                        <outlet property="dayLenghtLabel" destination="i54-3z-5rg" id="a1j-Jt-q1V"/>
+                        <outlet property="diameterLabel" destination="yYa-OG-yxl" id="FqC-RL-VNC"/>
+                        <outlet property="kmSunLabel" destination="KqX-Ae-W3u" id="t12-uN-i9d"/>
+                        <outlet property="orderLabel" destination="RAx-gS-Ima" id="XbK-d0-KR7"/>
+                        <outlet property="planetImage" destination="qEc-Lb-S9z" id="P2S-gw-3vN"/>
+                        <outlet property="planetLabel" destination="uo0-xZ-ibS" id="5Xy-wx-xq6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRq-vZ-dZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="156.97151424287858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RgM-Zr-uU7">
+            <objects>
+                <navigationController id="sTt-WS-Zva" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1m2-Sk-9pM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wym-2M-MUR" kind="relationship" relationship="rootViewController" id="hiF-tn-yBs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFk-LY-InY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="158"/>
+        </scene>
+    </scenes>
+</document>
